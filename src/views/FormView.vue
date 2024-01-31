@@ -1,5 +1,9 @@
 <template>
     <div id="app">
+
+      <!-- Puede usar la directiva v-model para crear bindings de datos 
+      bidireccionales (two-way binding) en elementos input, textarea y select de un formulario. -->
+
       <form @submit.prevent="submitForm">
         <label for="nombre">Nombre:</label>
         <input v-model="nombre" type="text" required id="nombre" />
